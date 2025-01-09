@@ -1,5 +1,1 @@
-The script provided is for emptying the Trash folder on a Mac using Python.
-It calls a shell command (rm -rf ~/.Trash/*) to remove all files and directories in the Trash. 
-The os.system() function is used to execute this command. If the operation is successful, it prints a confirmation message. 
-If there is an error (e.g., due to permission issues), it catches the exception and displays an error message.
-Be careful when using rm -rf, as it permanently deletes files without confirmation.
+This Python script empties the Trash folder on macOS by executing the shell command rm -rf ~/.Trash/*. It uses os.system() to run the command that recursively deletes all files in the Trash without any confirmation. The script includes error handling to catch potential issues (like permission errors) and prints success or error messages. Be cautious using this script as it permanently deletes files from the Trash without any opportunity to recover them.
